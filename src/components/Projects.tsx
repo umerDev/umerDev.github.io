@@ -76,7 +76,7 @@ const Projects = () => {
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {data?.map((project: PinnedRepo) => (
-            <Card key={project.id} className="overflow-hidden card-hover">
+            <Card key={project.id} className="overflow-hidden card-hover flex flex-col justify-between">
               <div className="aspect-video relative overflow-hidden bg-gray-100">
                 {project.openGraphImageUrl ? (
                   <img
@@ -108,7 +108,7 @@ const Projects = () => {
                   ))}
                 </div>
               </CardContent>
-              <CardFooter className="p-4 border-t bg-gray-50 flex flex-col items-center justify-between">
+              <CardFooter className="p-4 border-t bg-gray-50 flex flex-col items-center justify-between mt-auto">
                 <Button variant="outline" size="sm" asChild>
                   <a href={project.url} target="_blank" rel="noopener noreferrer">
                     <Github className="mr-1 h-4 w-4" />
