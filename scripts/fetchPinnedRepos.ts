@@ -76,7 +76,7 @@ async function fetchPinnedRepos() {
 
   const json = (await res.json()) as GraphQLResponse;
   const repos: PinnedRepo[] = json.data.user.pinnedItems.nodes;
-  const outPath = path.join(__dirname, '../src/data/pinnedRepos.json');
+  const outPath = path.join(__dirname, '../public/data/pinnedRepos.json');
   fs.mkdirSync(path.dirname(outPath), { recursive: true });
   fs.writeFileSync(outPath, JSON.stringify(repos, null, 2));
   console.log('Pinned repos data written to', outPath);
