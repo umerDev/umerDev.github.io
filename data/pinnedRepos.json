@@ -33,17 +33,6 @@
     }
   },
   {
-    "name": "typescript-template",
-    "description": "Typescript template with Jest",
-    "url": "https://github.com/umerDev/typescript-template",
-    "stargazerCount": 1,
-    "forkCount": 1,
-    "primaryLanguage": {
-      "name": "TypeScript",
-      "color": "#3178c6"
-    }
-  },
-  {
     "name": "erc721-nft-contract",
     "description": "ERC721 NFT Contract using Hardhat",
     "url": "https://github.com/umerDev/erc721-nft-contract",
@@ -60,6 +49,17 @@
     "url": "https://github.com/umerDev/private-geth-node",
     "stargazerCount": 0,
     "forkCount": 0,
+    "primaryLanguage": {
+      "name": "TypeScript",
+      "color": "#3178c6"
+    }
+  },
+  {
+    "name": "typescript-template",
+    "description": "Typescript template with Jest",
+    "url": "https://github.com/umerDev/typescript-template",
+    "stargazerCount": 1,
+    "forkCount": 1,
     "primaryLanguage": {
       "name": "TypeScript",
       "color": "#3178c6"
