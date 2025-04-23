@@ -72,7 +72,7 @@ const Projects = () => {
         <h2 className="text-3xl md:text-4xl font-bold mb-3 text-center">My Projects</h2>
         <div className="w-20 h-1 bg-gradient-to-r from-tech-blue to-tech-purple mx-auto mb-6 rounded-full"></div>
         <p className="text-gray-600 text-center max-w-2xl mx-auto mb-12">
-          Here are my GitHub pinned projects—built with love and a dash of caffeine!
+          Here are my GitHub pinned projects!
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {data?.map((project: PinnedRepo) => (
