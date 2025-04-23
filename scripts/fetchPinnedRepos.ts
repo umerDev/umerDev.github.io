@@ -4,6 +4,7 @@
 
 import * as fs from 'fs';
 import * as path from 'path';
+import { fetch } from 'undici';
 
 
 const GITHUB_USERNAME = 'umerDev';
@@ -59,7 +60,6 @@ type GraphQLResponse = {
 };
 
 async function fetchPinnedRepos() {
-  const fetch = (await import('node-fetch')).default;
   const res = await fetch('https://api.github.com/graphql', {
     method: 'POST',
     headers: {

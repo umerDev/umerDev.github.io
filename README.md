@@ -13,7 +13,6 @@ A modern, responsive developer portfolio site built with React, TypeScript, Vite
 
 [https://umer-dev.github.io/umer-dev-profile-page](https://umer-dev.github.io/umer-dev-profile-page)
 
-![Screenshot](screenshot.png) <!-- Add a screenshot of your portfolio, if available -->
 
 ## Tech Stack
 
