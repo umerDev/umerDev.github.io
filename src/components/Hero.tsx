@@ -18,15 +18,18 @@ const Hero = () => {
           </p>
           <div className="flex flex-wrap gap-4">
             <a href="#projects">
-  <Button className="bg-gradient-to-r from-tech-blue to-tech-purple hover:opacity-90 px-6 py-6 text-base">
-    View Projects
-    <ArrowRight className="ml-2 w-4 h-4" />
-  </Button>
-</a>
+              <Button className="bg-gradient-to-r from-tech-blue to-tech-purple hover:opacity-90 px-6 py-6 text-base">
+                View Projects
+                <ArrowRight className="ml-2 w-4 h-4" />
+              </Button>
+            </a>
+
+          <a href="https://github.com/umerDev" target="_blank" rel="noopener noreferrer">
             <Button variant="outline" className="border-tech-blue text-tech-blue hover:bg-tech-blue/10 px-6 py-6 text-base">
               <Github className="mr-2 w-4 h-4" />
               GitHub Profile
             </Button>
+          </a>
           </div>
         </div>
       </div>
