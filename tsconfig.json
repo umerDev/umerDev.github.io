@@ -5,10 +5,16 @@
     { "path": "./tsconfig.node.json" }
   ],
   "compilerOptions": {
+    "esModuleInterop": true,
+    "module": "commonjs",
+    "target": "ES2019",
+    "strict": true,
+    "outDir": "scripts-build",
     "baseUrl": ".",
     "paths": {
       "@/*": ["./src/*"]
     },
+    "include": ["scripts/**/*.ts"],
     "noImplicitAny": false,
     "noUnusedParameters": false,
     "skipLibCheck": true,

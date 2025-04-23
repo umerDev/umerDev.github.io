@@ -2,8 +2,8 @@
 // Usage: ts-node scripts/fetchPinnedRepos.ts
 // Requires process.env.GITHUB_TOKEN
 
-import fs from 'fs';
-import path from 'path';
+import * as fs from 'fs';
+import * as path from 'path';
 import fetch from 'node-fetch';
 
 const GITHUB_USERNAME = 'umerDev';
@@ -48,6 +48,16 @@ type PinnedRepo = {
   } | null;
 };
 
+type GraphQLResponse = {
+  data: {
+    user: {
+      pinnedItems: {
+        nodes: PinnedRepo[];
+      };
+    };
+  };
+};
+
 async function fetchPinnedRepos() {
   const res = await fetch('https://api.github.com/graphql', {
     method: 'POST',
@@ -63,7 +73,7 @@ async function fetchPinnedRepos() {
     process.exit(1);
   }
 
-  const json = await res.json();
+  const json = (await res.json()) as GraphQLResponse;
   const repos: PinnedRepo[] = json.data.user.pinnedItems.nodes;
   const outPath = path.join(__dirname, '../src/data/pinnedRepos.json');
   fs.mkdirSync(path.dirname(outPath), { recursive: true });
