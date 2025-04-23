@@ -1,0 +1,46 @@
+[
+  {
+    "name": "my-nft-dapp",
+    "description": "NFT minting and gallery dApp built with Next.js, Tailwind CSS, and RainbowKit. Features wallet connection, NFT storage integration. Deployed on Sepolia testnet.",
+    "url": "https://github.com/umerDev/my-nft-dapp",
+    "stargazerCount": 0,
+    "forkCount": 0,
+    "primaryLanguage": {
+      "name": "TypeScript",
+      "color": "#3178c6"
+    }
+  },
+  {
+    "name": "auction-system",
+    "description": "AuctionSystem written in TypeScript",
+    "url": "https://github.com/umerDev/auction-system",
+    "stargazerCount": 0,
+    "forkCount": 0,
+    "primaryLanguage": {
+      "name": "TypeScript",
+      "color": "#3178c6"
+    }
+  },
+  {
+    "name": "url-shortener",
+    "description": null,
+    "url": "https://github.com/umerDev/url-shortener",
+    "stargazerCount": 0,
+    "forkCount": 0,
+    "primaryLanguage": {
+      "name": "TypeScript",
+      "color": "#3178c6"
+    }
+  },
+  {
+    "name": "typescript-template",
+    "description": "Typescript template with Jest",
+    "url": "https://github.com/umerDev/typescript-template",
+    "stargazerCount": 1,
+    "forkCount": 1,
+    "primaryLanguage": {
+      "name": "TypeScript",
+      "color": "#3178c6"
+    }
+  }
+]
