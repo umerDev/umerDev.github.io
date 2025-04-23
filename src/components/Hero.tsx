@@ -10,17 +10,19 @@ const Hero = () => {
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 leading-tight">
             Hi, I'm <span className="gradient-text">Umer</span>
             <br />
-            Software Developer
+            Software Engineer
           </h1>
           <p className="text-lg md:text-xl text-gray-700 dark:text-gray-300 mb-8 max-w-2xl">
             I build high-quality web applications with React, TypeScript, and modern frameworks.
             Passionate about creating clean, efficient, and user-friendly solutions that deliver real value.
           </p>
           <div className="flex flex-wrap gap-4">
-            <Button className="bg-gradient-to-r from-tech-blue to-tech-purple hover:opacity-90 px-6 py-6 text-base">
-              View Projects
-              <ArrowRight className="ml-2 w-4 h-4" />
-            </Button>
+            <a href="#projects">
+  <Button className="bg-gradient-to-r from-tech-blue to-tech-purple hover:opacity-90 px-6 py-6 text-base">
+    View Projects
+    <ArrowRight className="ml-2 w-4 h-4" />
+  </Button>
+</a>
             <Button variant="outline" className="border-tech-blue text-tech-blue hover:bg-tech-blue/10 px-6 py-6 text-base">
               <Github className="mr-2 w-4 h-4" />
               GitHub Profile
