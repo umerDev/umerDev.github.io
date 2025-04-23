@@ -85,14 +85,14 @@ const Projects = () => {
                       ? project.languages.nodes.map((lang: { name: string }) => (
                           <span
                             key={lang.name}
-                            className="text-xs bg-white/80 text-gray-800 px-2 py-0.5 rounded-full shadow border border-gray-200 backdrop-blur"
+                            className="text-xs font-semibold bg-black/70 text-white px-3 py-1 rounded-full drop-shadow-lg border-2 border-white/70 backdrop-blur"
                           >
                             {lang.name}
                           </span>
                         ))
                       : project.primaryLanguage && (
                           <span
-                            className="text-xs bg-white/80 text-gray-800 px-2 py-0.5 rounded-full shadow border border-gray-200 backdrop-blur"
+                            className="text-xs font-semibold bg-black/70 text-white px-3 py-1 rounded-full drop-shadow-lg border-2 border-white/70 backdrop-blur"
                           >
                             {project.primaryLanguage.name}
                           </span>
