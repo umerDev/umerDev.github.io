@@ -82,7 +82,7 @@ const Projects = () => {
                 {(project.languages?.nodes?.length > 0 || project.primaryLanguage) && (
                   <div className="absolute top-2 left-2 z-10 flex flex-wrap gap-2">
                     {project.languages?.nodes?.length > 0
-                      ? project.languages.nodes.map((lang: { name: string }) => (
+                      ? project.languages.nodes.slice(0, 3).map((lang: { name: string }) => (
                           <span
                             key={lang.name}
                             className="text-xs font-semibold bg-black/70 text-white px-3 py-1 rounded-full drop-shadow-lg border-2 border-white/70 backdrop-blur"
@@ -99,23 +99,9 @@ const Projects = () => {
                         )}
                   </div>
                 )}
-                {project.openGraphImageUrl ? (
-                  <img
-                    src={project.openGraphImageUrl}
-                    alt={project.name}
-                    className="object-cover w-full h-full transition-transform duration-500 hover:scale-105"
-                  />
-                ) : project.url ? (
-                  <img
-                    src={`https://opengraph.githubassets.com/1/${project.url.split('/')[3]}/${project.url.split('/')[4]}`}
-                    alt={project.name}
-                    className="object-cover w-full h-full transition-transform duration-500 hover:scale-105"
-                  />
-                ) : (
                   <div className="w-full h-full flex items-center justify-center text-2xl text-gray-300 bg-gradient-to-br from-gray-100 to-gray-200">
                     <Github className="h-12 w-12" />
                   </div>
-                )}
               </div>
               <CardHeader className="p-4">
                 <h3 className="font-semibold text-xl">{project.name}</h3>
@@ -125,7 +111,7 @@ const Projects = () => {
                   {project.description || "No description provided."}
                 </p>
                 <div className="flex flex-wrap gap-2 mb-4">
-                  {(project.languages?.nodes ?? []).map((lang) => (
+                  {(project.languages?.nodes ?? []).slice(0, 3).map((lang) => (
                     <span
                       key={lang.name}
                       className="text-xs bg-gray-100 text-gray-800 px-2 py-1 rounded-full"
