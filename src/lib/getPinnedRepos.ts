@@ -10,10 +10,12 @@ export type PinnedRepo = {
 };
 
 export async function getPinnedRepos(username: string): Promise<PinnedRepo[]> {
-  const token = localStorage.getItem('GITHUB_TOKEN');
+  // Read token from env variable injected at build time
+  const token = import.meta.env.VITE_GITHUB_TOKEN;
   if (!token) {
     throw new Error(
-      "GitHub token not found in localStorage. Please add your token: localStorage.setItem('GITHUB_TOKEN', '<YOUR_TOKEN>') and refresh."
+      "GitHub token not found. Please set the VITE_GITHUB_TOKEN environment variable. " +
+      "If deploying to GitHub Pages or Actions, add a repository secret named VITE_GITHUB_TOKEN."
     );
   }
 
