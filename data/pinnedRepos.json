@@ -8,6 +8,22 @@
     "primaryLanguage": {
       "name": "TypeScript",
       "color": "#3178c6"
+    },
+    "languages": {
+      "nodes": [
+        {
+          "name": "TypeScript",
+          "color": "#3178c6"
+        },
+        {
+          "name": "JavaScript",
+          "color": "#f1e05a"
+        },
+        {
+          "name": "CSS",
+          "color": "#663399"
+        }
+      ]
     }
   },
   {
@@ -19,6 +35,22 @@
     "primaryLanguage": {
       "name": "TypeScript",
       "color": "#3178c6"
+    },
+    "languages": {
+      "nodes": [
+        {
+          "name": "TypeScript",
+          "color": "#3178c6"
+        },
+        {
+          "name": "JavaScript",
+          "color": "#f1e05a"
+        },
+        {
+          "name": "Dockerfile",
+          "color": "#384d54"
+        }
+      ]
     }
   },
   {
@@ -30,6 +62,22 @@
     "primaryLanguage": {
       "name": "TypeScript",
       "color": "#3178c6"
+    },
+    "languages": {
+      "nodes": [
+        {
+          "name": "TypeScript",
+          "color": "#3178c6"
+        },
+        {
+          "name": "JavaScript",
+          "color": "#f1e05a"
+        },
+        {
+          "name": "Shell",
+          "color": "#89e051"
+        }
+      ]
     }
   },
   {
@@ -41,6 +89,18 @@
     "primaryLanguage": {
       "name": "TypeScript",
       "color": "#3178c6"
+    },
+    "languages": {
+      "nodes": [
+        {
+          "name": "TypeScript",
+          "color": "#3178c6"
+        },
+        {
+          "name": "Solidity",
+          "color": "#AA6746"
+        }
+      ]
     }
   },
   {
@@ -52,6 +112,22 @@
     "primaryLanguage": {
       "name": "TypeScript",
       "color": "#3178c6"
+    },
+    "languages": {
+      "nodes": [
+        {
+          "name": "TypeScript",
+          "color": "#3178c6"
+        },
+        {
+          "name": "Dockerfile",
+          "color": "#384d54"
+        },
+        {
+          "name": "JavaScript",
+          "color": "#f1e05a"
+        }
+      ]
     }
   },
   {
@@ -63,6 +139,18 @@
     "primaryLanguage": {
       "name": "TypeScript",
       "color": "#3178c6"
+    },
+    "languages": {
+      "nodes": [
+        {
+          "name": "TypeScript",
+          "color": "#3178c6"
+        },
+        {
+          "name": "JavaScript",
+          "color": "#f1e05a"
+        }
+      ]
     }
   }
 ]
