@@ -25,30 +25,26 @@ const About = () => {
           </div>
           
           <div>
-            <h3 className="text-2xl font-semibold mb-4">Software Developer</h3>
+            <h3 className="text-2xl font-semibold mb-4">Lead Full Stack Software Engineer</h3>
             <p className="text-gray-700 mb-6">
-              Hello! I'm Umer, a passionate software developer with a focus on building web applications 
-              that solve real-world problems. My journey in tech has equipped me with a versatile skill set 
-              and an eye for detail. I specialize in modern JavaScript frameworks and love creating 
-              responsive, performant web applications.
+              Hey there! I’m Umer, your friendly neighborhood Lead Full Stack Software Engineer who thrives on innovation and agility. With over 8 years of professional experience (and plenty of coffee), I’ve had the joy of guiding development squads to build high-performance, cloud native wonders that delight users and scale effortlessly.
             </p>
             <p className="text-gray-700 mb-8">
-              When I'm not coding, I enjoy exploring new technologies, contributing to open-source 
-              projects, and sharing my knowledge with the developer community.
+              I wield a toolkit bursting with <strong>TypeScript</strong>, <strong>React</strong>, <strong>Vue</strong>, <strong>Go</strong>, <strong>C#</strong>, <strong>Java</strong>, and <strong>Python</strong>—spanning the cloud playgrounds of AWS, GCP, and Azure. From event-driven architectures to CI/CD magic, I’m passionate about crafting solutions that empower teams and deliver real product impact. Mentoring fellow engineers is my jam, and I’m always chasing new ways to make tech better, faster, and a little more fun!
             </p>
             
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <Card className="card-hover">
                 <CardContent className="p-6 flex flex-col items-center text-center">
-                  <div className="text-4xl font-bold text-tech-blue mb-2">2+</div>
-                  <p className="text-gray-600">Years Experience</p>
+                  <div className="text-4xl font-bold text-tech-blue mb-2">8+</div>
+                  <p className="text-gray-600">Years Leadership</p>
                 </CardContent>
               </Card>
               
               <Card className="card-hover">
                 <CardContent className="p-6 flex flex-col items-center text-center">
-                  <div className="text-4xl font-bold text-tech-purple mb-2">15+</div>
-                  <p className="text-gray-600">Projects Completed</p>
+                  <div className="text-4xl font-bold text-tech-purple mb-2">Product-Driven</div>
+                  <p className="text-gray-600">Team Mentor & Cloud Enthusiast</p>
                 </CardContent>
               </Card>
             </div>
@@ -60,3 +56,4 @@ const About = () => {
 };
 
 export default About;
+
