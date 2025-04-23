@@ -1,0 +1,74 @@
+/* Crazy Umer Animation */
+@keyframes crazy-umer {
+  0% {
+    transform: scale(1) rotate(0deg);
+    filter: blur(0px);
+    color: #fff;
+    background: linear-gradient(90deg, #7f5af0, #00c6fb, #ff6a00, #ff206e, #fbff00);
+    background-size: 200% 200%;
+    background-position: 0% 50%;
+  }
+  20% {
+    transform: scale(1.15) rotate(-8deg);
+    filter: blur(1px);
+    color: #ff206e;
+    background-position: 20% 70%;
+  }
+  40% {
+    transform: scale(0.95) rotate(8deg);
+    filter: blur(2px);
+    color: #00c6fb;
+    background-position: 40% 30%;
+  }
+  60% {
+    transform: scale(1.2) rotate(-12deg);
+    filter: blur(1.5px);
+    color: #fbff00;
+    background-position: 60% 80%;
+  }
+  80% {
+    transform: scale(1.05) rotate(12deg);
+    filter: blur(0.5px);
+    color: #7f5af0;
+    background-position: 80% 20%;
+  }
+  100% {
+    transform: scale(1) rotate(0deg);
+    filter: blur(0px);
+    color: #fff;
+    background-position: 100% 50%;
+  }
+}
+
+.crazy-umer {
+  background: linear-gradient(90deg, #7f5af0, #00c6fb, #ff6a00, #ff206e, #fbff00);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  transition: filter 0.2s, transform 0.2s;
+  filter: drop-shadow(0 2px 8px #7f5af0cc);
+}
+
+.crazy-umer.crazy-umer-active {
+  animation: crazy-umer 1.2s cubic-bezier(.68,-0.55,.27,1.55) 0s 1 forwards;
+}
+
+@keyframes screen-shake {
+  0% { transform: translate(0, 0); }
+  10% { transform: translate(-6px, 2px); }
+  20% { transform: translate(8px, -4px); }
+  30% { transform: translate(-12px, 6px); }
+  40% { transform: translate(10px, -8px); }
+  50% { transform: translate(-8px, 4px); }
+  60% { transform: translate(6px, -2px); }
+  70% { transform: translate(-4px, 8px); }
+  80% { transform: translate(2px, -6px); }
+  90% { transform: translate(-2px, 4px); }
+  100% { transform: translate(0, 0); }
+}
+
+.screen-shake {
+  animation: screen-shake 0.7s cubic-bezier(.68,-0.55,.27,1.55) 0s 1;
+}
+

@@ -1,16 +1,65 @@
 
 import { Github, ArrowRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import '../crazy-umer.css';
+import { useRef, useState, useEffect } from 'react';
+import MatrixRain from './MatrixRain';
 
 const Hero = () => {
+  const [crazy, setCrazy] = useState(false);
+  const crazyTimeout = useRef<NodeJS.Timeout | null>(null);
+  const [matrixActive, setMatrixActive] = useState(false);
+  const matrixBuffer = useRef('');
+  const matrixTimeout = useRef<NodeJS.Timeout | null>(null);
+
+  const handleCrazy = () => {
+    setCrazy(true);
+    document.body.classList.add('screen-shake');
+    if (crazyTimeout.current) clearTimeout(crazyTimeout.current);
+    crazyTimeout.current = setTimeout(() => {
+      setCrazy(false);
+      document.body.classList.remove('screen-shake');
+    }, 700);
+  };
+
+  useEffect(() => {
+    const onKeyDown = (e: KeyboardEvent) => {
+      if (e.metaKey || e.ctrlKey || e.altKey) return;
+      const char = e.key.length === 1 ? e.key.toLowerCase() : '';
+      if (!char.match(/[a-z0-9]/)) return;
+      matrixBuffer.current = (matrixBuffer.current + char).slice(-6);
+      if (matrixBuffer.current === 'matrix') {
+        setMatrixActive(true);
+        if (matrixTimeout.current) clearTimeout(matrixTimeout.current);
+        matrixTimeout.current = setTimeout(() => setMatrixActive(false), 5000);
+        matrixBuffer.current = '';
+      }
+    };
+    window.addEventListener('keydown', onKeyDown);
+    return () => {
+      window.removeEventListener('keydown', onKeyDown);
+      if (matrixTimeout.current) clearTimeout(matrixTimeout.current);
+    };
+  }, []);
+
   return (
-    <section id="hero" className="min-h-screen flex flex-col justify-center pt-20 pb-8">
+    <>
+      <MatrixRain active={matrixActive} />
+      <section id="hero" className="min-h-screen flex flex-col justify-center pt-20 pb-8">
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row items-center md:items-start max-w-4xl mx-auto w-full">
           {/* Left: Text */}
           <div className="flex-1 md:pr-8">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 leading-tight">
-              Hi, I'm <span className="gradient-text">Umer</span>.
+              Hi, I'm <span
+  className={`relative crazy-umer inline-block cursor-pointer${crazy ? ' crazy-umer-active' : ''}`}
+  onClick={handleCrazy}
+  tabIndex={0}
+  aria-label="Activate crazy animation"
+  role="button"
+>
+  Umer
+</span>.
               <br />
               Software Engineer
             </h1>
@@ -61,6 +110,7 @@ const Hero = () => {
         </a>
       </div>
     </section>
+    </>
   );
 };
 
