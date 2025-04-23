@@ -11,7 +11,7 @@ export type PinnedRepo = {
 
 export async function getPinnedRepos(): Promise<PinnedRepo[]> {
   // Load pinned repos from static JSON generated at build time
-  const response = await fetch('/umer-dev-profile-page/data/pinnedRepos.json');
+  const response = await fetch('/data/pinnedRepos.json');
   if (!response.ok) {
     throw new Error('Failed to load pinned repos data.');
   }
