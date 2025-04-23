@@ -82,11 +82,15 @@ const Projects = () => {
                 {(project.languages?.nodes?.length > 0 || project.primaryLanguage) && (
                   <div className="absolute top-2 left-2 z-10 flex flex-wrap gap-2">
                     {project.languages?.nodes?.length > 0
-                      ? project.languages.nodes.slice(0, 3).map((lang: { name: string }) => (
+                      ? project.languages.nodes.slice(0, 3).map((lang: { name: string; color?: string }) => (
                           <span
                             key={lang.name}
-                            className="text-xs font-semibold bg-black/70 text-white px-3 py-1 rounded-full drop-shadow-lg border-2 border-white/70 backdrop-blur"
+                            className="flex items-center text-xs font-semibold bg-black/70 text-white px-3 py-1 rounded-full drop-shadow-lg border-2 border-white/70 backdrop-blur"
                           >
+                            <span
+                              className="w-2 h-2 rounded-full mr-2"
+                              style={{ backgroundColor: lang.color || '#999' }}
+                            />
                             {lang.name}
                           </span>
                         ))
@@ -94,7 +98,11 @@ const Projects = () => {
                           <span
                             className="text-xs font-semibold bg-black/70 text-white px-3 py-1 rounded-full drop-shadow-lg border-2 border-white/70 backdrop-blur"
                           >
-                            {project.primaryLanguage.name}
+                            <span
+  className="w-2 h-2 rounded-full mr-2"
+  style={{ backgroundColor: project.primaryLanguage.color || '#999' }}
+/>
+{project.primaryLanguage.name}
                           </span>
                         )}
                   </div>
@@ -114,8 +122,12 @@ const Projects = () => {
                   {(project.languages?.nodes ?? []).slice(0, 3).map((lang) => (
                     <span
                       key={lang.name}
-                      className="text-xs bg-gray-100 text-gray-800 px-2 py-1 rounded-full"
+                      className="flex items-center text-xs bg-gray-100 text-gray-800 px-2 py-1 rounded-full"
                     >
+                      <span
+                        className="w-2 h-2 rounded-full mr-2"
+                        style={{ backgroundColor: lang.color || '#999' }}
+                      />
                       {lang.name}
                     </span>
                   ))}
