@@ -108,26 +108,14 @@ const Projects = () => {
                   ))}
                 </div>
               </CardContent>
-              <CardFooter className="p-4 border-t bg-gray-50 flex justify-between">
+              <CardFooter className="p-4 border-t bg-gray-50 flex flex-col items-center justify-between">
                 <Button variant="outline" size="sm" asChild>
                   <a href={project.url} target="_blank" rel="noopener noreferrer">
                     <Github className="mr-1 h-4 w-4" />
                     Code
                   </a>
                 </Button>
-                {project.homepageUrl ? (
-                  <Button size="sm" className="bg-tech-blue hover:bg-tech-darkblue" asChild>
-                    <a href={project.homepageUrl} target="_blank" rel="noopener noreferrer">
-                      <ExternalLink className="mr-1 h-4 w-4" />
-                      Live Demo
-                    </a>
-                  </Button>
-                ) : (
-                  <Button size="sm" className="bg-tech-blue opacity-50 cursor-not-allowed" disabled>
-                    <ExternalLink className="mr-1 h-4 w-4" />
-                    Live Demo
-                  </Button>
-                )}
+                {project.homepageUrl }
               </CardFooter>
             </Card>
           ))}
