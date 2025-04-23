@@ -2,7 +2,7 @@
 import { useQuery } from "@tanstack/react-query";
 import { Card, CardContent, CardFooter, CardHeader } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import { Github, ExternalLink } from 'lucide-react';
+import { Github, ExternalLink, FileCode } from 'lucide-react';
 import { getPinnedRepos, PinnedRepo } from "@/lib/getPinnedRepos";
 import { Skeleton } from "@/components/ui/skeleton";
 
@@ -112,8 +112,8 @@ const Projects = () => {
                     className="object-cover w-full h-full transition-transform duration-500 hover:scale-105"
                   />
                 ) : (
-                  <div className="w-full h-full flex items-center justify-center text-2xl text-gray-400">
-                    <Github className="h-10 w-10" />
+                  <div className="w-full h-full flex items-center justify-center text-2xl text-gray-300 bg-gradient-to-br from-gray-100 to-gray-200">
+                    <Github className="h-12 w-12" />
                   </div>
                 )}
               </div>
