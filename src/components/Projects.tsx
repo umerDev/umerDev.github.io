@@ -84,6 +84,12 @@ const Projects = () => {
                     alt={project.name}
                     className="object-cover w-full h-full transition-transform duration-500 hover:scale-105"
                   />
+                ) : project.url ? (
+                  <img
+                    src={`https://opengraph.githubassets.com/1/${project.url.split('/')[3]}/${project.url.split('/')[4]}`}
+                    alt={project.name}
+                    className="object-cover w-full h-full transition-transform duration-500 hover:scale-105"
+                  />
                 ) : (
                   <div className="w-full h-full flex items-center justify-center text-2xl text-gray-400">
                     <Github className="h-10 w-10" />
