@@ -38,9 +38,9 @@ const NavBar = () => {
             </a>
             <ThemeToggle />
           </div>
-          <Button className="bg-gradient-to-r from-tech-blue to-tech-purple hover:opacity-90">
+          {/* <Button className="bg-gradient-to-r from-tech-blue to-tech-purple hover:opacity-90">
             Resume
-          </Button>
+          </Button> */}
         </div>
 
         {/* Mobile Menu Button */}
@@ -64,9 +64,9 @@ const NavBar = () => {
                 <Linkedin className="w-5 h-5" />
               </a>
             </div>
-            <Button className="bg-gradient-to-r from-tech-blue to-tech-purple hover:opacity-90 w-full">
+            {/* <Button className="bg-gradient-to-r from-tech-blue to-tech-purple hover:opacity-90 w-full">
               Resume
-            </Button>
+            </Button> */}
           </div>
         </div>
       )}
