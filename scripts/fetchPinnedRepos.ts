@@ -4,7 +4,7 @@
 
 import * as fs from 'fs';
 import * as path from 'path';
-import fetch from 'node-fetch';
+
 
 const GITHUB_USERNAME = 'umerDev';
 const GITHUB_TOKEN = process.env.GITHUB_TOKEN;
@@ -59,6 +59,7 @@ type GraphQLResponse = {
 };
 
 async function fetchPinnedRepos() {
+  const fetch = (await import('node-fetch')).default;
   const res = await fetch('https://api.github.com/graphql', {
     method: 'POST',
     headers: {
