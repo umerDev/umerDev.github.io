@@ -79,16 +79,24 @@ const Projects = () => {
             <Card key={project.id} className="overflow-hidden card-hover flex flex-col justify-between">
               <div className="aspect-video relative overflow-hidden bg-gray-100">
                 {/* Language badges overlay */}
-                {project.languages?.nodes && project.languages.nodes.length > 0 && (
+                {(project.languages?.nodes?.length > 0 || project.primaryLanguage) && (
                   <div className="absolute top-2 left-2 z-10 flex flex-wrap gap-2">
-                    {project.languages.nodes.map((lang: { name: string }) => (
-                      <span
-                        key={lang.name}
-                        className="text-xs bg-white/80 text-gray-800 px-2 py-0.5 rounded-full shadow border border-gray-200 backdrop-blur"
-                      >
-                        {lang.name}
-                      </span>
-                    ))}
+                    {project.languages?.nodes?.length > 0
+                      ? project.languages.nodes.map((lang: { name: string }) => (
+                          <span
+                            key={lang.name}
+                            className="text-xs bg-white/80 text-gray-800 px-2 py-0.5 rounded-full shadow border border-gray-200 backdrop-blur"
+                          >
+                            {lang.name}
+                          </span>
+                        ))
+                      : project.primaryLanguage && (
+                          <span
+                            className="text-xs bg-white/80 text-gray-800 px-2 py-0.5 rounded-full shadow border border-gray-200 backdrop-blur"
+                          >
+                            {project.primaryLanguage.name}
+                          </span>
+                        )}
                   </div>
                 )}
                 {project.openGraphImageUrl ? (

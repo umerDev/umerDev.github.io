@@ -1,11 +1,12 @@
 export type PinnedRepo = {
-  id: string;
+  id?: string;
   name: string;
   description: string | null;
   url: string;
-  homepageUrl: string | null;
-  openGraphImageUrl: string | null;
-  languages: { nodes: { name: string }[] };
+  homepageUrl?: string | null;
+  openGraphImageUrl?: string | null;
+  languages?: { nodes: { name: string }[] };
+  primaryLanguage?: { name: string; color?: string } | null;
 };
 
 export async function getPinnedRepos(): Promise<PinnedRepo[]> {
