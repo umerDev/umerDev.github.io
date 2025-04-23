@@ -37,7 +37,7 @@ const About = () => {
               <Card className="card-hover">
                 <CardContent className="p-6 flex flex-col items-center text-center">
                   <div className="text-4xl font-bold text-tech-blue mb-2">8+</div>
-                  <p className="text-gray-600">Years Leadership</p>
+                  <p className="text-gray-600">Years of Experience</p>
                 </CardContent>
               </Card>
               
