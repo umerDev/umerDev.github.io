@@ -19,10 +19,13 @@ jobs:
       - name: Install dependencies
         run: npm install
 
+      - name: Compile fetchPinnedRepos script
+        run: npx tsc scripts/fetchPinnedRepos.ts --outDir scripts-build
+
       - name: Fetch GitHub pinned repos
         env:
           GITHUB_TOKEN: ${{ secrets.VITE_GITHUB_TOKEN }}
-        run: npx ts-node scripts/fetchPinnedRepos.ts
+        run: node scripts-build/fetchPinnedRepos.js
 
       - name: Build
         run: npm run build
