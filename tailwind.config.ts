@@ -2,6 +2,11 @@ import type { Config } from "tailwindcss";
 
 export default {
 	darkMode: ["class"],
+    safelist: [
+        'animate-[growWidth_1s_ease-out_forwards]',
+        'data-[state=open]:animate-accordion-down',
+        'data-[state=closed]:animate-accordion-up',
+    ],
 	content: [
 		"./pages/**/*.{ts,tsx}",
 		"./components/**/*.{ts,tsx}",
@@ -52,6 +57,13 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
+				tech: {
+					blue: '#4361EE',
+					purple: '#7209B7',
+					lightblue: '#4CC9F0',
+					darkblue: '#3A0CA3',
+					gradient: 'linear-gradient(90deg, #4361EE 0%, #7209B7 100%)',
+				},
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
 					foreground: 'hsl(var(--sidebar-foreground))',
@@ -84,7 +96,11 @@ export default {
 					to: {
 						height: '0'
 					}
-				}
+				},
+                'growWidth': {
+                    '0%': { width: '0%' },
+                    '100%': { width: 'var(--width)' }
+                }
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
