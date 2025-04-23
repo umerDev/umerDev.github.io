@@ -30,6 +30,12 @@ const query = `
               name
               color
             }
+            languages(first: 3, orderBy: {field: SIZE, direction: DESC}) {
+              nodes {
+                name
+                color
+              }
+            }
           }
         }
       }
