@@ -38,7 +38,7 @@ A modern, responsive developer portfolio site built with React, TypeScript, Vite
 ## Requirements
 
 - Node.js (>= 18 recommended)
-- npm (>= 9 recommended) or yarn
+- npm (>= 9 recommended) or npm
 
 ## Getting Started
 
@@ -54,7 +54,7 @@ A modern, responsive developer portfolio site built with React, TypeScript, Vite
    ```sh
    npm install
    # or
-   yarn install
+   npm install
    ```
 
 3. **Start the development server:**
@@ -62,7 +62,7 @@ A modern, responsive developer portfolio site built with React, TypeScript, Vite
    ```sh
    npm run dev
    # or
-   yarn dev
+   npm dev
    ```
 
    The app will be available at [http://localhost:5173](http://localhost:5173) by default.
@@ -72,7 +72,7 @@ A modern, responsive developer portfolio site built with React, TypeScript, Vite
    ```sh
    npm run build
    # or
-   yarn build
+   npm build
    ```
 
 5. **Preview the production build:**
@@ -80,7 +80,7 @@ A modern, responsive developer portfolio site built with React, TypeScript, Vite
    ```sh
    npm run preview
    # or
-   yarn preview
+   npm preview
    ```
 
 ## Customization
