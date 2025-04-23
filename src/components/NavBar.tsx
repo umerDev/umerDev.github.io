@@ -29,12 +29,11 @@ const NavBar = () => {
           <a href="#about" className="font-medium hover:text-tech-blue transition-colors">About</a>
           <a href="#projects" className="font-medium hover:text-tech-blue transition-colors">Projects</a>
           <a href="#skills" className="font-medium hover:text-tech-blue transition-colors">Skills</a>
-          <a href="#contact" className="font-medium hover:text-tech-blue transition-colors">Contact</a>
           <div className="flex gap-3 items-center">
             <a href="https://github.com/umerDev" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
               <Github className="w-5 h-5 hover:text-tech-blue transition-colors" />
             </a>
-            <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <a href="https://www.linkedin.com/in/umer-raja/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
               <Linkedin className="w-5 h-5 hover:text-tech-blue transition-colors" />
             </a>
             <ThemeToggle />
@@ -57,12 +56,11 @@ const NavBar = () => {
             <a href="#about" className="font-medium hover:text-tech-blue transition-colors" onClick={() => setIsMenuOpen(false)}>About</a>
             <a href="#projects" className="font-medium hover:text-tech-blue transition-colors" onClick={() => setIsMenuOpen(false)}>Projects</a>
             <a href="#skills" className="font-medium hover:text-tech-blue transition-colors" onClick={() => setIsMenuOpen(false)}>Skills</a>
-            <a href="#contact" className="font-medium hover:text-tech-blue transition-colors" onClick={() => setIsMenuOpen(false)}>Contact</a>
             <div className="flex gap-4">
               <a href="https://github.com/umerDev" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
                 <Github className="w-5 h-5" />
               </a>
-              <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+              <a href="https://www.linkedin.com/in/umer-raja/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
                 <Linkedin className="w-5 h-5" />
               </a>
             </div>

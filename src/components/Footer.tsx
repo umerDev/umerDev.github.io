@@ -19,17 +19,8 @@ const Footer = () => {
             <a href="https://github.com/umerDev" target="_blank" rel="noopener noreferrer" className="hover:text-tech-lightblue transition-colors p-2" aria-label="GitHub">
               <Github className="h-5 w-5" />
             </a>
-            <a href="#" target="_blank" rel="noopener noreferrer" className="hover:text-tech-lightblue transition-colors p-2" aria-label="LinkedIn">
+            <a href="https://www.linkedin.com/in/umer-raja/" target="_blank" rel="noopener noreferrer" className="hover:text-tech-lightblue transition-colors p-2" aria-label="LinkedIn">
               <Linkedin className="h-5 w-5" />
-            </a>
-            <a href="#" target="_blank" rel="noopener noreferrer" className="hover:text-tech-lightblue transition-colors p-2" aria-label="Twitter">
-              <Twitter className="h-5 w-5" />
-            </a>
-            <a href="#" target="_blank" rel="noopener noreferrer" className="hover:text-tech-lightblue transition-colors p-2" aria-label="Instagram">
-              <Instagram className="h-5 w-5" />
-            </a>
-            <a href="mailto:contact@example.com" className="hover:text-tech-lightblue transition-colors p-2" aria-label="Email">
-              <Mail className="h-5 w-5" />
             </a>
           </div>
         </div>
