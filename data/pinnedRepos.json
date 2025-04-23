@@ -23,7 +23,7 @@
   },
   {
     "name": "url-shortener",
-    "description": "Enter a url and get a short url back using a random hash.",
+    "description": "Built using T3Stack. Enter a url and get a short url back using a random hash.",
     "url": "https://github.com/umerDev/url-shortener",
     "stargazerCount": 0,
     "forkCount": 0,
