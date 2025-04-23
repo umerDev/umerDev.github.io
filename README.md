@@ -1,73 +1,98 @@
-# Welcome to your Lovable project
+# Developer Portfolio
 
-## Project info
+A modern, responsive developer portfolio site built with React, TypeScript, Vite, Tailwind CSS, and shadcn-ui. Showcase your skills, projects, and experience with a clean and customizable design.
 
-**URL**: https://lovable.dev/projects/862510eb-965d-4cb4-a5bc-5c02cab08010
+## Features
 
-## How can I edit this code?
+- Responsive design for all devices
+- Modern UI with Tailwind CSS and shadcn-ui components
+- Modular code structure for easy customization
+- Sections for About, Skills, Projects, and Contact
 
-There are several ways of editing your application.
+## Live Site
 
-**Use Lovable**
+[https://umer-dev.github.io/umer-dev-profile-page](https://umer-dev.github.io/umer-dev-profile-page)
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/862510eb-965d-4cb4-a5bc-5c02cab08010) and start prompting.
+![Screenshot](screenshot.png) <!-- Add a screenshot of your portfolio, if available -->
 
-Changes made via Lovable will be committed automatically to this repo.
+## Tech Stack
 
-**Use your preferred IDE**
+- [React](https://react.dev/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Vite](https://vitejs.dev/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [shadcn-ui](https://ui.shadcn.com/)
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## Project Structure
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+```
+├── public/              # Static assets
+├── src/
+│   ├── components/      # Reusable React components
+│   ├── pages/           # Page components (e.g. Home, About)
+│   ├── App.tsx          # App entry point
+│   └── main.tsx         # Vite/React bootstrap
+├── package.json         # Project metadata and scripts
+└── README.md            # Project documentation
 ```
 
-**Edit a file directly in GitHub**
+## Requirements
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+- Node.js (>= 18 recommended)
+- npm (>= 9 recommended) or yarn
 
-**Use GitHub Codespaces**
+## Getting Started
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+1. **Clone the repository:**
 
-## What technologies are used for this project?
+   ```sh
+   git clone https://github.com/umerDev/umer-dev-profile-page.git
+   cd umer-dev-profile-page
+   ```
 
-This project is built with:
+2. **Install dependencies:**
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+   ```sh
+   npm install
+   # or
+   yarn install
+   ```
 
-## How can I deploy this project?
+3. **Start the development server:**
 
-Simply open [Lovable](https://lovable.dev/projects/862510eb-965d-4cb4-a5bc-5c02cab08010) and click on Share -> Publish.
+   ```sh
+   npm run dev
+   # or
+   yarn dev
+   ```
 
-## Can I connect a custom domain to my Lovable project?
+   The app will be available at [http://localhost:5173](http://localhost:5173) by default.
 
-Yes, you can!
+4. **Build for production:**
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+   ```sh
+   npm run build
+   # or
+   yarn build
+   ```
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+5. **Preview the production build:**
+
+   ```sh
+   npm run preview
+   # or
+   yarn preview
+   ```
+
+## Customization
+
+- Update the content in the `src/components` and `src/pages` directories to personalize your portfolio.
+- Adjust styles using Tailwind CSS classes or add new components as needed.
+
+## License
+
+[MIT](LICENSE)
+
+---
+
+Feel free to fork and customize this portfolio for your own use!
