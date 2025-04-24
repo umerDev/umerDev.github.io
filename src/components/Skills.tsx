@@ -2,7 +2,6 @@
 import { Card, CardContent } from '@/components/ui/card';
 import { useEffect, useRef, useState } from 'react';
 
-// Updated skills data with 70% backend / cloud focus and 30% frontend.
 const skillsData = [
   {
     category: "Backend & Cloud",
@@ -11,13 +10,15 @@ const skillsData = [
       { name: "Node.js", level: 90 },
       { name: "Cloud Native Architecture", level: 90 },
       { name: "RESTful APIs", level: 90 },
+      { name: "GraphQL", level: 90 },
       { name: "CI/CD Pipelines", level: 88 },
       { name: "Microservices", level: 88 },
       { name: "Event-driven Design", level: 85 },
       { name: "Docker", level: 85 },
-      { name: "AWS / GCP / Azure", level: 82 },
+      { name: "Terraform", level: 85 },
+      { name: "AWS / GCP / Azure", level: 85 },
       { name: "SQL", level: 82 },
-      { name: "MongoDB", level: 79 },
+      { name: "NoSQL", level: 79 },
       { name: "C#", level: 70 },
       { name: "Go", level: 70 },
       { name: "Java", level: 70 },
@@ -110,6 +111,27 @@ const Skills = () => {
               </CardContent>
             </Card>
           ))}
+        </div>
+        {/* Certifications Pill Badges */}
+        <div className="mt-6 flex flex-wrap gap-10 justify-center">
+          <h1 className="text-xl font-semibold mt-1 gradient-text">Certifications</h1>
+          <span className="px-4 py-2 rounded-full bg-gradient-to-r from-tech-blue to-tech-purple text-white font-semibold shadow-md text-sm">
+            ITIL Foundation
+          </span>
+          <span className="px-4 py-2 rounded-full bg-gradient-to-r from-tech-blue to-tech-purple text-white font-semibold shadow-md text-sm">
+            Agile Foundation
+          </span>
+          <a
+            href="https://www.credly.com/badges/d70bd345-176a-4e05-8fc4-f3ce769bcb89/public_url"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="px-4 py-2 rounded-full bg-gradient-to-r from-tech-blue to-tech-purple text-white font-semibold shadow-md text-sm transition hover:opacity-90 focus:outline-none focus:ring-2 focus:ring-tech-blue"
+          >
+            Azure AI Fundamentals
+          </a>
+          <span className="px-4 py-2 rounded-full bg-gradient-to-r from-tech-blue to-tech-purple text-white font-semibold shadow-md text-sm">
+            OWASP
+          </span>
         </div>
       </div>
     </section>
