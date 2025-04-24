@@ -35,15 +35,15 @@ const About = () => {
             
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <Card className="card-hover">
-                <CardContent className="p-6 flex flex-col items-center text-center">
-                  <div className="text-4xl font-bold text-tech-blue mb-2">8+</div>
-                  <p className="text-gray-600">Years of Experience</p>
-                </CardContent>
+                <CardContent className="p-6 flex flex-col justify-center items-center text-center h-full min-h-[110px]">
+  <div className="text-4xl font-bold text-tech-blue mb-2">8+</div>
+  <p className="text-gray-600">Years of Experience</p>
+</CardContent>
               </Card>
               
               <Card className="card-hover">
                 <CardContent className="p-6 flex flex-col items-center text-center">
-                  <div className="text-4xl font-bold text-tech-purple mb-2">Product-Driven</div>
+                  <div className="text-4xl font-bold text-tech-purple mb-2">Product Driven</div>
                   <p className="text-gray-600">Team Mentor & Cloud Enthusiast</p>
                 </CardContent>
               </Card>
