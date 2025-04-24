@@ -73,7 +73,7 @@ const NavBar = () => {
                 <Linkedin className="w-5 h-5" />
               </a>
               <a
-                href="/cv.pdf"
+                href="/data/cv.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 px-4 py-1 rounded-full bg-gradient-to-r from-tech-blue to-tech-purple text-white font-semibold shadow-md text-sm transition hover:opacity-90 focus:outline-none focus:ring-2 focus:ring-tech-blue"
