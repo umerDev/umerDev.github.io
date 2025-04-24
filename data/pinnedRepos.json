@@ -28,7 +28,7 @@
   },
   {
     "name": "auction-system",
-    "description": "AuctionSystem written in TypeScript",
+    "description": "An Auction system written in TypeScript using MongoDB",
     "url": "https://github.com/umerDev/auction-system",
     "stargazerCount": 0,
     "forkCount": 0,
