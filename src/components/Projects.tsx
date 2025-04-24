@@ -78,35 +78,7 @@ const Projects = () => {
           {data?.map((project: PinnedRepo) => (
             <Card key={project.id} className="overflow-hidden card-hover flex flex-col justify-between">
               <div className="aspect-video relative overflow-hidden bg-gray-100">
-                {/* Language badges overlay */}
-                {(project.languages?.nodes?.length > 0 || project.primaryLanguage) && (
-                  <div className="absolute top-2 left-2 z-10 flex flex-wrap gap-2">
-                    {project.languages?.nodes?.length > 0
-                      ? project.languages.nodes.slice(0, 3).map((lang: { name: string; color?: string }) => (
-                          <span
-                            key={lang.name}
-                            className="flex items-center text-xs font-semibold bg-black/70 text-white px-3 py-1 rounded-full drop-shadow-lg border-2 border-white/70 backdrop-blur"
-                          >
-                            <span
-                              className="w-2 h-2 rounded-full mr-2"
-                              style={{ backgroundColor: lang.color || '#999' }}
-                            />
-                            {lang.name}
-                          </span>
-                        ))
-                      : project.primaryLanguage && (
-                          <span
-                            className="text-xs font-semibold bg-black/70 text-white px-3 py-1 rounded-full drop-shadow-lg border-2 border-white/70 backdrop-blur"
-                          >
-                            <span
-  className="w-2 h-2 rounded-full mr-2"
-  style={{ backgroundColor: project.primaryLanguage.color || '#999' }}
-/>
-{project.primaryLanguage.name}
-                          </span>
-                        )}
-                  </div>
-                )}
+             
                   <div className="w-full h-full flex items-center justify-center text-2xl text-gray-300 bg-gradient-to-br from-gray-100 to-gray-200">
                     <Github className="h-12 w-12" />
                   </div>
@@ -122,13 +94,13 @@ const Projects = () => {
                   {(project.languages?.nodes ?? []).slice(0, 3).map((lang) => (
                     <span
                       key={lang.name}
-                      className="flex items-center text-xs bg-gray-100 text-gray-800 px-2 py-1 rounded-full"
+                      className="flex items-center text-xs bg-gray-100 text-gray-800 px-2 py-1 rounded-full border-2 border-white"
                     >
                       <span
-                        className="w-2 h-2 rounded-full mr-2"
+                        className="w-2 h-2 rounded-full mr-2 border-2 border-white"
                         style={{ backgroundColor: lang.color || '#999' }}
                       />
-                      {lang.name}
+                      <span className="text-gray-800 dark:text-white">{lang.name}</span>
                     </span>
                   ))}
                 </div>
