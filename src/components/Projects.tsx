@@ -149,8 +149,7 @@ const Projects = () => {
               <CardFooter className="p-4 border-t bg-gray-50 flex flex-col items-center justify-between mt-auto">
                 <Button variant="outline" size="sm" asChild>
                   <a href={project.url} target="_blank" rel="noopener noreferrer">
-                    {getProjectImage(project, 'small')}
-
+                  <Github className="mr-1 h-4 w-4" />
                     Code
                   </a>
                 </Button>
