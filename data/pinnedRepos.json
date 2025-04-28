@@ -27,6 +27,29 @@
     }
   },
   {
+    "name": "erc721-nft-contract",
+    "description": "ERC721 NFT Contract using Hardhat",
+    "url": "https://github.com/umerDev/erc721-nft-contract",
+    "stargazerCount": 0,
+    "forkCount": 0,
+    "primaryLanguage": {
+      "name": "TypeScript",
+      "color": "#3178c6"
+    },
+    "languages": {
+      "nodes": [
+        {
+          "name": "TypeScript",
+          "color": "#3178c6"
+        },
+        {
+          "name": "Solidity",
+          "color": "#AA6746"
+        }
+      ]
+    }
+  },
+  {
     "name": "private-geth-node",
     "description": "Dockerised geth node with indexer, check balances for users",
     "url": "https://github.com/umerDev/private-geth-node",
@@ -103,29 +126,6 @@
         {
           "name": "Dockerfile",
           "color": "#384d54"
-        }
-      ]
-    }
-  },
-  {
-    "name": "erc721-nft-contract",
-    "description": "ERC721 NFT Contract using Hardhat",
-    "url": "https://github.com/umerDev/erc721-nft-contract",
-    "stargazerCount": 0,
-    "forkCount": 0,
-    "primaryLanguage": {
-      "name": "TypeScript",
-      "color": "#3178c6"
-    },
-    "languages": {
-      "nodes": [
-        {
-          "name": "TypeScript",
-          "color": "#3178c6"
-        },
-        {
-          "name": "Solidity",
-          "color": "#AA6746"
         }
       ]
     }
