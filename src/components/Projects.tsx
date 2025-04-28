@@ -29,8 +29,7 @@ function getProjectImage(project: PinnedRepo, size: 'large' | 'small' = 'large')
         <img
           src={imagePath}
           alt={project.name + ' preview'}
-          className="object-cover w-full h-full"
-          style={{ maxHeight: 120, maxWidth: 200, borderRadius: '0.5rem' }}
+          className="object-cover w-full h-full rounded-lg"
         />
       );
     }
