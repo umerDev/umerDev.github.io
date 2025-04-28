@@ -8,6 +8,48 @@ import { Skeleton } from "@/components/ui/skeleton";
 
 const GITHUB_USERNAME = "umerDev";
 
+const availableImages = [
+  'auction-system.jpeg',
+  'erc721-nft-contract.jpeg',
+  'my-nft-dapp.jpeg',
+  'private-geth-node.jpeg',
+  'typescript-template.jpeg',
+  'url-shortener.jpeg',
+];
+
+function getProjectImage(project: PinnedRepo, size: 'large' | 'small' = 'large') {
+  const imageName = project.name
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/(^-|-$)/g, '') + '.jpeg';
+  const imagePath = `/data/github-repo-images/${imageName}`;
+  if (availableImages.includes(imageName)) {
+    if (size === 'large') {
+      return (
+        <img
+          src={imagePath}
+          alt={project.name + ' preview'}
+          className="object-cover w-full h-full"
+          style={{ maxHeight: 120, maxWidth: 200, borderRadius: '0.5rem' }}
+        />
+      );
+    }
+    return (
+      <img
+        src={imagePath}
+        alt={project.name + ' preview'}
+        className="inline-block mr-1 h-4 w-4 rounded-sm object-cover align-middle"
+        style={{ verticalAlign: 'middle' }}
+      />
+    );
+  }
+  return size === 'large' ? (
+    <Github className="h-12 w-12" />
+  ) : (
+    <Github className="mr-1 h-4 w-4" />
+  );
+}
+
 const Projects = () => {
   // Fetch pinned projects
   const { data, isLoading, isError, error } = useQuery({
@@ -80,8 +122,8 @@ const Projects = () => {
               <div className="aspect-video relative overflow-hidden bg-gray-100">
              
                   <div className="w-full h-full flex items-center justify-center text-2xl text-gray-300 bg-gradient-to-br from-gray-100 to-gray-200">
-                    <Github className="h-12 w-12" />
-                  </div>
+  {getProjectImage(project, 'large')}
+</div>
               </div>
               <CardHeader className="p-4">
                 <h3 className="font-semibold text-xl">{project.name}</h3>
@@ -108,7 +150,8 @@ const Projects = () => {
               <CardFooter className="p-4 border-t bg-gray-50 flex flex-col items-center justify-between mt-auto">
                 <Button variant="outline" size="sm" asChild>
                   <a href={project.url} target="_blank" rel="noopener noreferrer">
-                    <Github className="mr-1 h-4 w-4" />
+                    {getProjectImage(project, 'small')}
+
                     Code
                   </a>
                 </Button>
