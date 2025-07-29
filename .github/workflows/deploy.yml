@@ -24,7 +24,7 @@ jobs:
 
       - name: Fetch GitHub pinned repos
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GH_PAGES_DEPLOY_TOKEN }}
         run: node scripts-build/fetchPinnedRepos.cjs
 
       - name: Build
@@ -33,5 +33,5 @@ jobs:
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          personal_token: ${{ secrets.GH_PAGES_DEPLOY_TOKEN }}
           publish_dir: ./dist
