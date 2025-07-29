@@ -1,6 +1,6 @@
 
 import { useState, useEffect } from 'react';
-import { Menu, X, Github, Linkedin, FileText } from 'lucide-react';
+import { Menu, X, Github, Linkedin } from 'lucide-react';
 import ThemeToggle from './ThemeToggle';
 
 const NavBar = () => {
@@ -26,6 +26,7 @@ const NavBar = () => {
         {/* Desktop Menu */}
         <div className="hidden md:flex items-center gap-8">
           <a href="#about" className="font-medium hover:text-tech-blue transition-colors">About</a>
+          <a href="#experience" className="font-medium hover:text-tech-blue transition-colors">Experience</a>
           <a href="#projects" className="font-medium hover:text-tech-blue transition-colors">Projects</a>
           <a href="#skills" className="font-medium hover:text-tech-blue transition-colors">Skills</a>
           <div className="flex gap-3 items-center">
@@ -34,16 +35,6 @@ const NavBar = () => {
             </a>
             <a href="https://www.linkedin.com/in/umer-raja/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
               <Linkedin className="w-5 h-5 hover:text-tech-blue transition-colors" />
-            </a>
-            <a
-              href="/data/cv.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center gap-2 px-4 py-1 rounded-full bg-gradient-to-r from-tech-blue to-tech-purple text-white font-semibold shadow-md text-sm transition hover:opacity-90 focus:outline-none focus:ring-2 focus:ring-tech-blue"
-              aria-label="Download CV"
-            >
-              <FileText className="w-4 h-4" />
-              CV
             </a>
             <ThemeToggle />
           </div>
@@ -63,6 +54,7 @@ const NavBar = () => {
         <div className="md:hidden absolute top-full left-0 right-0 bg-white shadow-lg p-4">
           <div className="flex flex-col space-y-4">
             <a href="#about" className="font-medium hover:text-tech-blue transition-colors" onClick={() => setIsMenuOpen(false)}>About</a>
+            <a href="#experience" className="font-medium hover:text-tech-blue transition-colors" onClick={() => setIsMenuOpen(false)}>Experience</a>
             <a href="#projects" className="font-medium hover:text-tech-blue transition-colors" onClick={() => setIsMenuOpen(false)}>Projects</a>
             <a href="#skills" className="font-medium hover:text-tech-blue transition-colors" onClick={() => setIsMenuOpen(false)}>Skills</a>
             <div className="flex gap-4 items-center">
@@ -71,16 +63,6 @@ const NavBar = () => {
               </a>
               <a href="https://www.linkedin.com/in/umer-raja/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
                 <Linkedin className="w-5 h-5" />
-              </a>
-              <a
-                href="/data/cv.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center gap-2 px-4 py-1 rounded-full bg-gradient-to-r from-tech-blue to-tech-purple text-white font-semibold shadow-md text-sm transition hover:opacity-90 focus:outline-none focus:ring-2 focus:ring-tech-blue"
-                aria-label="Download CV"
-              >
-                <FileText className="w-4 h-4" />
-                CV
               </a>
             </div>
             {/* <Button className="bg-gradient-to-r from-tech-blue to-tech-purple hover:opacity-90 w-full">
