@@ -24,7 +24,7 @@ jobs:
 
       - name: Fetch GitHub pinned repos
         env:
-          GITHUB_TOKEN: ${{ secrets.VITE_GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GH_PAGES_DEPLOY_TOKEN }}
         run: node scripts-build/fetchPinnedRepos.cjs
 
       - name: Build
