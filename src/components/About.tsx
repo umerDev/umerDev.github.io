@@ -30,7 +30,7 @@ const About = () => {
               Hey there! I’m Umer, Lead Full Stack Software Engineer who thrives on innovation and agility. With over 8 years of professional experience, I’ve had the joy of guiding development squads to build high-performance, cloud native solutions that scale and perform.
             </p>
             <p className="text-gray-700 mb-8">
-              I wield a toolkit bursting with <strong>TypeScript</strong>, <strong>React</strong>, <strong>Vue</strong>, <strong>Go</strong>, <strong>C#</strong>, <strong>Java</strong>, and <strong>Python</strong>—spanning the cloud playgrounds of AWS, GCP, and Azure. From event-driven architectures to CI/CD pipelines. I’m passionate about crafting solutions that empower teams and deliver real product impact. Mentoring fellow engineers is something that I enjoy, and I’m always looking to further develop my skills and knowledge!
+              I wield a toolkit bursting with <strong>TypeScript</strong>, <strong>React</strong>, <strong>Vue</strong>, <strong>Go</strong>, <strong>C#</strong>, <strong>Java</strong>, and <strong>Python</strong>. I have experience in major cloud providers: AWS, GCP, and Azure. From event-driven architectures to CI/CD pipelines. I’m passionate about crafting solutions that empower teams and deliver real product impact. Mentoring fellow engineers is something that I enjoy, and I’m always looking to further develop my skills and knowledge!
             </p>
             
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">

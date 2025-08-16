@@ -99,7 +99,7 @@ const Skills = () => {
         <h2 className="text-3xl md:text-4xl font-bold mb-3 text-center">Skills & Expertise</h2>
         <div className="w-20 h-1 bg-gradient-to-r from-tech-blue to-tech-purple mx-auto mb-6 rounded-full"></div>
         <p className="text-gray-600 text-center max-w-2xl mx-auto mb-12">
-        As a cloud-native full stack engineer with a backend-first approach, I combine deep architectural expertise and technical leadership to build scalable, high-impact product solutions. Below is a summary of my core strengths:        </p>
+        As a cloud-native full stack engineer, I combine deep architectural expertise and technical leadership to build scalable, high-impact product solutions. Below is a summary of my core strengths:        </p>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {skillsData.map((category, index) => (
             <Card key={index} className="card-hover">

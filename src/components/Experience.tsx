@@ -33,7 +33,7 @@ const experiences: ExperienceItem[] = [
       "Led a team delivering a blockchain-based rugby gaming product",
       "Reduced cloud costs by 49% migrating App Engine to Cloud Run",
       "Improved site performance (Lighthouse 43 → 84), refactored GraphQL APIs",
-      "Delivered modular NFT system & automated Stripe payments",
+      "Delivered modular NFT system & integrated Stripe payments",
       "Introduced Terraform IaC, CI/CD, and private VPC networking",
       "Built dynamic SVG-based NFT generation, Playwright testing suite"
     ],
@@ -46,11 +46,11 @@ const experiences: ExperienceItem[] = [
     location: "Manchester",
     period: "Mar 2022 - Feb 2024",
     description: [
-      "Designed and deployed NFT infrastructure across multichain environments",
       "Built scalable EVM indexer (processed 21M blocks in 4 hours)",
-      "Implemented ERC721/ERC1151 smart contracts, GraphQL + CQRS read/write split",
-      "Developed Artist Dashboard & integrated Intercom for support",
-      "Led CI/CD automation and introduced Terragrunt for infrastructure consistency"
+      "Event driven architecture with CQRS read/write split",
+      "ERC721/ERC1151 smart contracts execution and event indexing",
+      "Developed Artist Dashboard & integrated Intercom on marketplace for support",
+      "Led CI/CD automation and created IaC using Terraform and Terragrunt"
     ],
     technologies: ["GCP", "TypeScript", "VueJS", "Nuxt3", "NodeJS", "GraphQL", "TypeGraphQL", "PostgreSQL", "Prisma", "Intercom", "Docker", "Kubernetes", "Helm", "Terraform", "Terragrunt", "GitHub Actions"]
   },
@@ -63,7 +63,7 @@ const experiences: ExperienceItem[] = [
     description: [
       "Government Backend: Scaled Go microservices to handle 6M+ file requests (12MB WSQ files) in 12-hour windows, optimized with pprof profiling",
       "Government Mobile PoC: Led 7 developers building serverless React Native app with OpenCV image processing, AWS Step Functions orchestration, and Saga pattern implementation",
-      "AR Mobile App: Built cross-platform Unity AR application with MQTT IoT integration, custom shaders, native iOS/Android plugins, and webhook APIs. Showcased at Fujitsu World Tour"
+      "Augmented Reality Mobile App: Built a cross-platform mobile application with MQTT IoT integration, custom shaders, native iOS/Android plugins, and custom webhook integrations. Showcased at Fujitsu World Tour"
     ],
     technologies: ["Go", "gRPC", "MongoDB", "NATS", "React-Native", "TypeScript", "Java", "Python", "OpenCV", "TensorFlow", "AWS", "Unity", "C#", "Objective-C", "MQTT", "Docker", "Terraform", "GitLab CI/CD"]
   }

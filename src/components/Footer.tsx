@@ -11,7 +11,7 @@ const Footer = () => {
           <div className="mb-6 md:mb-0">
             <h2 className="text-2xl font-bold bg-gradient-to-r from-tech-lightblue to-tech-purple bg-clip-text text-transparent">Umer</h2>
             <p className="text-gray-400 mt-2 max-w-md">
-              Building modern web applications with passion and precision.
+              Building cloud native solutions.
             </p>
           </div>
           
