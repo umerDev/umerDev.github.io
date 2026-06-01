@@ -10,7 +10,7 @@ const About = () => {
         <div className="w-20 h-1 bg-gradient-to-r from-tech-blue to-tech-purple mx-auto mb-12 rounded-full"></div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
-          <div className="relative">
+          <div className="relative hidden md:block">
             {/* Decorative elements */}
             <div className="absolute -top-4 -left-4 w-20 h-20 border-t-4 border-l-4 border-tech-blue"></div>
             <div className="absolute -bottom-4 -right-4 w-20 h-20 border-b-4 border-r-4 border-tech-purple"></div>
@@ -18,8 +18,8 @@ const About = () => {
             {/* Profile image */}
             <div className="aspect-square relative overflow-hidden rounded-lg shadow-xl z-10">
               <img
-                src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
-                alt="Profile placeholder"
+                src="/photo.jpeg"
+                alt="Umer Raja"
                 className="object-cover w-full h-full"
               />
             </div>
